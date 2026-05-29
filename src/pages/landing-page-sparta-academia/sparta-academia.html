@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Rafael</title>
-    <link rel="shortcut icon" href="src/assets/img/favicon/favicon-pato.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/img/favicon/favicon-pato.png" type="image/x-icon">
     <link rel="stylesheet" href="../../../style.css">
     <link rel="stylesheet" href="sparta-academia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 </head>
 
 <body>
@@ -15,36 +16,14 @@
     <div class="project-page">
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ol>
-                <li><a href="./../../../index.html#projetos">Inicio</a></li>
-                <li><a href="javascript:;">Academia Sparta</a></li>
-                <li><span aria-current="page">Landing Page</span></li>
+                <li><a href="./../../../index.html#projetos">Pagina Inicial</a></li>
+                <li><span aria-current="page">Academia Sparta</span></li>
             </ol>
         </nav>
 
         <section class="project-detail">
             <div class="project-gallery">
-                <button class="gallery-btn prev" aria-label="Imagem anterior">‹</button>
-
-                <div class="gallery-main">
-                    <img id="projectImage" src="../../assets/img/landing-page/hero.png" alt="Projeto Sparta">
-                </div>
-
-                <button class="gallery-btn next" aria-label="Próxima imagem">›</button>
-
-                <div class="gallery-thumbs" id="galleryThumbs">
-                    <button class="thumb active" data-index="0">
-                        <img src="../../assets/img/landing-page/hero.png" alt="Thumb 1">
-                    </button>
-                    <button class="thumb" data-index="1">
-                        <img src="../../assets/img/landing-page/planos.png" alt="Thumb 2">
-                    </button>
-                    <button class="thumb" data-index="2">
-                        <img src="../../assets/img/landing-page/modalidades.png" alt="Thumb 3">
-                    </button>
-                    <button class="thumb" data-index="3">
-                        <img src="../../assets/img/landing-page/footer.png" alt="Thumb 4">
-                    </button>
-                </div>
+                <img src="img/sparta-desktop.png" id="galleryImage">
             </div>
 
             <div class="project-info">
@@ -58,6 +37,17 @@
                     tela. Além disso, conta com um botão flutuante de contato via WhatsApp, que torna a comunicação mais
                     prática e acessível.
                 </p>
+
+                <div class="hero-actions">
+                    <a href="javascript:;" class="btn btn-primary project-version-btn"
+                        data-image="img/sparta-desktop.png">
+                        <i class="fa-solid fa-desktop"></i> Versão Desktop
+                    </a>
+                    <a href="javascript:;" class="btn btn-secondary project-version-btn"
+                        data-image="img/sparta-mobile.png">
+                        <i class="fa-solid fa-mobile-screen-button"></i>Versão Mobile
+                    </a>
+                </div>
 
                 <div class="project-meta">
                     <div>
@@ -84,7 +74,6 @@
                 <h5>Contato</h5>
                 <a href="javascript:;" id="copyEmailBtn2">rafaelptjr@gmail.com</a>
             </div>
-
         </div>
 
         <div class="copyright">

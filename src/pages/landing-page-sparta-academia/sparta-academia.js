@@ -15,43 +15,35 @@ btn2.addEventListener("click", async () => {
     }
 });
 
-const images = [
-    "../../assets/img/landing-page/hero.png",
-    "../../assets/img/landing-page/planos.png",
-    "../../assets/img/landing-page/modalidades.png",
-    "../../assets/img/landing-page/footer.png"
-];
+const buttons = document.querySelectorAll(
+    ".project-version-btn"
+);
 
-const projectImage = document.getElementById("projectImage");
-const thumbs = document.querySelectorAll(".thumb");
-const prevBtn = document.querySelector(".gallery-btn.prev");
-const nextBtn = document.querySelector(".gallery-btn.next");
+const galleryImage =
+    document.getElementById("galleryImage");
 
-let currentIndex = 0;
+buttons.forEach(button => {
 
-function updateGallery(index) {
-    currentIndex = index;
-    projectImage.src = images[currentIndex];
+    button.addEventListener("click", () => {
 
-    thumbs.forEach((thumb, i) => {
-        thumb.classList.toggle("active", i === currentIndex);
+        buttons.forEach(btn =>
+            btn.classList.remove("active")
+        );
+
+        button.classList.add("active");
+
+        const newImage =
+            button.getAttribute("data-image");
+
+        galleryImage.classList.add("fade");
+
+        setTimeout(() => {
+            galleryImage.src = newImage;
+
+            galleryImage.classList.remove("fade");
+
+        }, 200);
+
     });
-}
 
-prevBtn.addEventListener("click", () => {
-    const newIndex = currentIndex === 0 ? images.length - 1 : currentIndex - 1;
-    updateGallery(newIndex);
 });
-
-nextBtn.addEventListener("click", () => {
-    const newIndex = currentIndex === images.length - 1 ? 0 : currentIndex + 1;
-    updateGallery(newIndex);
-});
-
-thumbs.forEach((thumb) => {
-    thumb.addEventListener("click", () => {
-        updateGallery(Number(thumb.dataset.index));
-    });
-});
-
-updateGallery(0);
