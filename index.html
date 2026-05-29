@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio de Rafael</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="src/assets/img/favicon/favicon-pato.png" type="image/x-icon">
+</head>
+
+<body>
+  <main>
+    <span id="copyTooltip" class="tooltip">E-mail copiado!</span>
+
+    <section class="hero" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Olá, eu sou</p>
+          <h1>Rafael <span>Pierre</span></h1>
+          <h2>Desenvolvedor <span>Full-Stack</span></h2>
+          <p class="description">
+            Sou desenvolvedor Full-stack, especializado na criação de aplicações web modernas, escaláveis e visualmente
+            refinadas. Trabalho com HTML, CSS, JavaScript, Vue 3, Spring Boot, Java e SQL, unindo tecnologia,
+            performance e experiência do usuário para entregar soluções robustas e bem estruturadas.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projetos" class="btn btn-primary">Ver Projetos <span>➜</span></a>
+            <a href="src/assets/files/Rafael Gustavo Pierre - Curriculum.pdf" download="Curriculo-Rafael-Pierre.pdf"
+              class="btn btn-secondary">Baixar CV <span>🕮</span></a>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/RafaelGustavoPierre" target="_blank" aria-label="GitHub">GitHub</a>
+            <a href="https://www.linkedin.com/in/rafael-gustavo-pierre/" target="_blank"
+              aria-label="LinkedIn">LinkedIn</a>
+            <a href="javascript:;" id="copyEmailBtn" aria-label="Email">E-mail</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="code-icon">&lt; / &gt;</div>
+          </div>
+
+          <div class="decor decor-one"></div>
+          <div class="decor decor-two"></div>
+          <div class="dots left"></div>
+          <div class="dots right"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projetos">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="section-label">PROJETOS</p>
+            <h3>Alguns trabalhos recentes</h3>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-thumb">
+              <img src="src/assets/img/landing-page/landing-page-sparta.png" alt="Landing Page Sparta" />
+            </div>
+
+            <div class="project-content">
+              <h4>Landing Page Sparta</h4>
+              <p>Landing page moderna para apresentar o ambiente da Academia Sparta.</p>
+
+              <div class="tags">
+                <span class="tag-html">HTML</span>
+                <span class="tag-css">CSS</span>
+                <span class="tag-javascript">JavaScript</span>
+              </div>
+
+              <a href="/src/pages/landing-page-sparta-academia/sparta-academia.html" class="project-link">Ver Projeto
+                <span>➜</span></a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-thumb thumb-2" src="src/assets/img/brewer/Dashboard.png" />
+            <div class="project-content">
+              <h4>Dashboard de Vendas</h4>
+              <p>Dashboard responsivo com gráficos interativos e acompanhamento de investimentos.</p>
+              <div class="tags">
+                <span class="tag-html">HTML</span>
+                <span class="tag-bootstrap">Bootstrap</span>
+                <span class="tag-spring">Spring Framework</span>
+                <span class="tag-mysql">MySQL</span>
+              </div>
+              <a href="#" class="project-link">Ver Projeto <span>➜</span></a>
+            </div>
+          </article>
+
+          <!-- <article class="project-card">
+            <div class="project-thumb thumb-3"></div>
+            <div class="project-content">
+              <h4>E-commerce</h4>
+              <p>Loja virtual completa com carrinho de compras, checkout e painel administrativo.</p>
+              <div class="tags">
+                <span class="tag-html">HTML</span>
+                <span class="tag-css">CSS</span>
+                <span class="tag-javascript">JavaScript</span>
+              </div>
+              <a href="#" class="project-link">Ver Projeto <span>→</span></a>
+            </div>
+          </article> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contato">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">Sobre<span> Rafael</span></a>
+        <p>Desenvolvedor Full-Stack apaixonado por criar experiências em Tecnologia.</p>
+      </div>
+
+      <!-- <div class="footer-col">
+        <h5>Navegação</h5>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+      </div> -->
+
+      <!-- <div class="footer-col">
+        <h5></h5>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#contato">Contato</a>
+        <a href="#">Blog</a>
+      </div> -->
+
+
+      <div class="footer-col">
+        <h5>Redes Sociais</h5>
+        <!-- <div class="footer-socials"> -->
+        <a href="https://github.com/RafaelGustavoPierre" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/rafael-gustavo-pierre/" target="_blank">LinkedIn</a>
+        <!-- </div> -->
+      </div>
+
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <a href="javascript:;" id="copyEmailBtn2">rafaelptjr@gmail.com</a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Rafael Pierre | Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

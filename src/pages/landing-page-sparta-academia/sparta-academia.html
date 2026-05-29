@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Rafael</title>
+    <link rel="shortcut icon" href="src/assets/img/favicon/favicon-pato.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="sparta-academia.css">
+</head>
+
+<body>
+    <span id="copyTooltip" class="tooltip">E-mail copiado!</span>
+    <div class="project-page">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/index.html#projetos">Inicio</a></li>
+                <li><a href="javascript:;">Academia Sparta</a></li>
+                <li><span aria-current="page">Landing Page</span></li>
+            </ol>
+        </nav>
+
+        <section class="project-detail">
+            <div class="project-gallery">
+                <button class="gallery-btn prev" aria-label="Imagem anterior">‹</button>
+
+                <div class="gallery-main">
+                    <img id="projectImage" src="/src/assets/img/landing-page/hero.png" alt="Projeto Sparta">
+                </div>
+
+                <button class="gallery-btn next" aria-label="Próxima imagem">›</button>
+
+                <div class="gallery-thumbs" id="galleryThumbs">
+                    <button class="thumb active" data-index="0">
+                        <img src="/src/assets/img/landing-page/hero.png" alt="Thumb 1">
+                    </button>
+                    <button class="thumb" data-index="1">
+                        <img src="/src/assets/img/landing-page/planos.png" alt="Thumb 2">
+                    </button>
+                    <button class="thumb" data-index="2">
+                        <img src="/src/assets/img/landing-page/modalidades.png" alt="Thumb 3">
+                    </button>
+                    <button class="thumb" data-index="3">
+                        <img src="/src/assets/img/landing-page/footer.png" alt="Thumb 4">
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <span class="project-label">Projeto em destaque</span>
+                <h2>Landing Page Sparta Academia</h2>
+                <p>
+                    Landing Page Sparta é um projeto desenvolvido para apresentar a Academia Sparta de forma moderna,
+                    clara e objetiva. A página traz informações sobre a academia, sua localização e seus canais de
+                    contato, facilitando o acesso rápido para novos visitantes e possíveis clientes. O projeto foi
+                    pensado com foco em responsividade mobile, garantindo uma boa experiência em diferentes tamanhos de
+                    tela. Além disso, conta com um botão flutuante de contato via WhatsApp, que torna a comunicação mais
+                    prática e acessível.
+                </p>
+
+                <div class="project-meta">
+                    <div>
+                        <strong>Tecnologias</strong>
+                        <span>HTML, CSS, JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer" id="contato">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">Sobre<span> Rafael</span></a>
+                <p>Desenvolvedor Full-Stack apaixonado por criar experiências em Tecnologia.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Redes Sociais</h5>
+                <a href="https://github.com/RafaelGustavoPierre" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/rafael-gustavo-pierre/" target="_blank">LinkedIn</a>
+            </div>
+
+            <div class="footer-col">
+                <h5>Contato</h5>
+                <a href="javascript:;" id="copyEmailBtn2">rafaelptjr@gmail.com</a>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Rafael Pierre | Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="sparta-academia.js"></script>
+</body>
+
+</html>
