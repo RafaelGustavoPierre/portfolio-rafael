@@ -16,10 +16,10 @@ btn2.addEventListener("click", async () => {
 });
 
 const images = [
-    "../../../src/assets/img/landing-page/hero.png",
-    "../../../src/assets/img/landing-page/planos.png",
-    "../../../src/assets/img/landing-page/modalidades.png",
-    "../../../src/assets/img/landing-page/footer.png"
+    "../../assets/img/landing-page/hero.png",
+    "../../assets/img/landing-page/planos.png",
+    "../../assets/img/landing-page/modalidades.png",
+    "../../assets/img/landing-page/footer.png"
 ];
 
 const projectImage = document.getElementById("projectImage");
