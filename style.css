@@ -386,6 +386,25 @@ a {
   color: #adb100;
 }
 
+.tag-typescript {
+  background: #3178c68f;
+  color: #3178c6;
+}
+
+.tag-primevue {
+  background: #3dcd7d9e;
+  color: #38a765;
+}
+
+.tag-primeflex {
+  background: #29c78f94;
+  color: #27a377;
+}
+
+.tag-flyway {
+  background: #f1323294;
+  color: #dd3131;
+}
 
 .project-link {
   color: var(--primary-dark);
